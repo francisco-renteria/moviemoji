@@ -4,7 +4,7 @@ Moviemoji is a fun and innovative way to explore movies through emojis! 🍿✨
 
 ## Screenshots
 
-<p align="center"> >
+<p align="center">
   <img src="./images/moviemoji (1).png" width="32%" />
   <img src="./images/moviemoji (2).png" width="32%" />
   <img src="./images/moviemoji (3).png" width="32%" />
