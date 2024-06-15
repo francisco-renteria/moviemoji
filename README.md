@@ -4,9 +4,9 @@ Moviemoji is a fun and innovative way to explore movies through emojis! 🍿✨
 
 ## Screenshots
 
-![Moviemoji Input](/images/moviemoji%20(1).png|width=10)
-![Moviemoji OpenMoji](/images/moviemoji%20(2).png|width=10)
-![Moviemoji IOS Emoji](/images/moviemoji%20(3).png|width=10)
+<img src="./images/moviemoji (1).png" width="100">
+<img src="./images/moviemoji (2).png" width="100">
+<img src="./images/moviemoji (3).png" width="100">
 
 ## English Version
 
