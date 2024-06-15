@@ -4,11 +4,11 @@ Moviemoji is a fun and innovative way to explore movies through emojis! 🍿✨
 
 ## Screenshots
 
-<p style="display: inline-flex;">
+<div style="display: inline-flex;">
   <img src="./images/moviemoji (1).png" style="min-width: 250px; max-width: 100%; margin-right: 10px;" />
   <img src="./images/moviemoji (2).png" style="min-width: 250px; max-width: 100%; margin-right: 10px;" />
   <img src="./images/moviemoji (3).png" style="min-width: 250px; max-width: 100%;" />
-</p>
+</div>
 
 ## English Version
 
