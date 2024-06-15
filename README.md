@@ -2,6 +2,12 @@
 
 Moviemoji is a fun and innovative way to explore movies through emojis! 🍿✨
 
+## Screenshots
+
+![Moviemoji Screenshot](/images/moviemoji%20(1).png)
+![Moviemoji Screenshot](/images/moviemoji%20(2).png)
+![Moviemoji Screenshot](/images/moviemoji%20(3).png)
+
 ## English Version
 
 ### Overview
