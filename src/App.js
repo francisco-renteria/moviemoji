@@ -13,9 +13,10 @@ import {
   Tooltip,
 } from "@mui/material";
 import axios from "axios";
-import { styled } from "@mui/system";
 import SendIcon from "@mui/icons-material/Send";
 import convertCodeToEmoji from "./convertEmojiCode";
+const API_URL = process.env.REACT_APP_API_URL;
+console.log(process.env.REACT_APP_API_URL);
 
 const App = () => {
   const [movieName, setMovieName] = useState("");
@@ -46,8 +47,9 @@ const App = () => {
   const handleSubmit = async () => {
     setLoading(true);
     setError(false);
+    console.log(API_URL);
     try {
-      const response = await axios.get("http://localhost:3000/find", {
+      const response = await axios.get(`${API_URL}/find`, {
         params: {
           movie: movieName,
         },
