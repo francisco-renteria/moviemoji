@@ -1,20 +1,20 @@
-# Moviemoji 🎬👾
+# TMDB2EMOJIS 🎬👾
 
-Moviemoji is a fun and innovative way to explore movies through emojis! 🍿✨
+TMDB2EMOJIS is a fun and innovative way to explore movies through emojis! 🍿✨
 
 ## Screenshots
 
 <p align="center">
-  <img src="./images/moviemoji (1).png" width="32%" />
-  <img src="./images/moviemoji (2).png" width="32%" />
-  <img src="./images/moviemoji (3).png" width="32%" />
+  <img src="./images/TMDB2EMOJIS (1).png" width="32%" />
+  <img src="./images/TMDB2EMOJIS (2).png" width="32%" />
+  <img src="./images/TMDB2EMOJIS (3).png" width="32%" />
 </p>
 
 ## English Version
 
 ### Overview
 
-Moviemoji leverages the power of Natural Language Processing (NLP) with NodeJS to extract key information from movie synopses and represent them with relevant emojis. This frontend application allows users to enter a movie title, which is then used to fetch data from TMDB (The Movie Database). Using NLP techniques, Moviemoji identifies important keywords from the movie's synopsis and translates them into emojis.
+TMDB2EMOJIS leverages the power of Natural Language Processing (NLP) with NodeJS to extract key information from movie synopses and represent them with relevant emojis. This frontend application allows users to enter a movie title, which is then used to fetch data from TMDB (The Movie Database). Using NLP techniques, TMDB2EMOJIS identifies important keywords from the movie's synopsis and translates them into emojis.
 
 ### Features
 
@@ -25,9 +25,9 @@ Moviemoji leverages the power of Natural Language Processing (NLP) with NodeJS t
 ### How It Works
 
 1. **Input**: Users input a movie title into the search bar.
-2. **Backend Processing**: The frontend sends a request to our backend API, hosted at [Moviemoji API](https://github.com/francisco-renteria/moviemoji-api), which retrieves movie data from TMDB.
+2. **Backend Processing**: The frontend sends a request to our backend API, hosted at [TMDB2EMOJIS API](https://github.com/francisco-renteria/TMDB2EMOJIS-api), which retrieves movie data from TMDB.
 3. **NLP Extraction**: The API uses NLP to analyze the synopsis and extract keywords.
-4. **Emoji Selection**: Based on these keywords, Moviemoji selects relevant emojis to visually represent the movie.
+4. **Emoji Selection**: Based on these keywords, TMDB2EMOJIS selects relevant emojis to visually represent the movie.
 5. **Display**: The emojis are displayed alongside the movie title, providing a unique and engaging viewing experience.
 
 ### Technologies Used
@@ -39,9 +39,9 @@ Moviemoji leverages the power of Natural Language Processing (NLP) with NodeJS t
 
 ### Try It Out!
 
-Visit [Moviemoji](https://www.moviememoji.com) to start exploring movies through emojis today!
+Visit [TMDB2EMOJIS](https://www.moviememoji.com) to start exploring movies through emojis today!
 
-For more details on the backend implementation, check out our [Moviemoji API repository](https://github.com/francisco-renteria/moviemoji-api).
+For more details on the backend implementation, check out our [TMDB2EMOJIS API repository](https://github.com/francisco-renteria/TMDB2EMOJIS-api).
 
 ---
 
@@ -49,7 +49,7 @@ For more details on the backend implementation, check out our [Moviemoji API rep
 
 ### Visión General
 
-Moviemoji es una forma divertida e innovadora de explorar películas a través de emojis! 🍿✨
+TMDB2EMOJIS es una forma divertida e innovadora de explorar películas a través de emojis! 🍿✨
 
 ### Características
 
@@ -60,9 +60,9 @@ Moviemoji es una forma divertida e innovadora de explorar películas a través d
 ### Cómo Funciona
 
 1. **Entrada**: Los usuarios ingresan el título de una película en la barra de búsqueda.
-2. **Procesamiento en el Backend**: El frontend envía una solicitud a nuestra API backend, alojada en [Moviemoji API](https://github.com/francisco-renteria/moviemoji-api), que recupera datos de películas de TMDB.
+2. **Procesamiento en el Backend**: El frontend envía una solicitud a nuestra API backend, alojada en [TMDB2EMOJIS API](https://github.com/francisco-renteria/TMDB2EMOJIS-api), que recupera datos de películas de TMDB.
 3. **Extracción NLP**: La API utiliza NLP para analizar la sinopsis y extraer palabras clave.
-4. **Selección de Emojis**: Basándose en estas palabras clave, Moviemoji selecciona emojis relevantes para representar visualmente la película.
+4. **Selección de Emojis**: Basándose en estas palabras clave, TMDB2EMOJIS selecciona emojis relevantes para representar visualmente la película.
 5. **Visualización**: Los emojis se muestran junto al título de la película, proporcionando una experiencia visual única y atractiva.
 
 ### Tecnologías Utilizadas
@@ -74,6 +74,6 @@ Moviemoji es una forma divertida e innovadora de explorar películas a través d
 
 ### ¡Pruébalo!
 
-Visita [Moviemoji](https://www.moviememoji.com) para empezar a explorar películas a través de emojis hoy mismo!
+Visita [TMDB2EMOJIS](https://www.moviememoji.com) para empezar a explorar películas a través de emojis hoy mismo!
 
-Para más detalles sobre la implementación del backend, consulta nuestro [repositorio de Moviemoji API](https://github.com/francisco-renteria/moviemoji-api).
+Para más detalles sobre la implementación del backend, consulta nuestro [repositorio de TMDB2EMOJIS API](https://github.com/francisco-renteria/TMDB2EMOJIS-api).
