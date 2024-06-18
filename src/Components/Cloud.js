@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
-import OPENMOJIJSON from "./data/OpenMoji.json";
-import convertCodeToEmoji from "./convertEmojiCode";
+import OPENMOJIJSON from "../data/OpenMoji.json";
+import convertCodeToEmoji from "../utils/convertEmojiCode";
 
 const emojis = loadMojis();
 
@@ -14,7 +14,7 @@ function loadMojis() {
   return EMOJI_LIST;
 }
 
-function Cloud({ EMOJI_COUNT }) {
+const Cloud = ({ EMOJI_COUNT }) => {
   const emojiContainerRef = useRef(null);
   const emojiElements1 = useRef([]);
   const emojiElements2 = useRef([]);
@@ -100,6 +100,6 @@ function Cloud({ EMOJI_COUNT }) {
   }, [EMOJI_COUNT]);
 
   return <div id="emoji-container" ref={emojiContainerRef}></div>;
-}
+};
 
 export default Cloud;

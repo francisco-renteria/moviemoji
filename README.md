@@ -39,7 +39,7 @@ TMDB2EMOJIS leverages the power of Natural Language Processing (NLP) with NodeJS
 
 ### Try It Out!
 
-Visit [TMDB2EMOJIS](https://www.moviememoji.com) to start exploring movies through emojis today!
+Visit [TMDB2EMOJIS](https://www.tmdb2emojis.vercel.app) to start exploring movies through emojis today!
 
 For more details on the backend implementation, check out our [TMDB2EMOJIS API repository](https://github.com/francisco-renteria/TMDB2EMOJIS-api).
 
@@ -74,6 +74,6 @@ TMDB2EMOJIS es una forma divertida e innovadora de explorar películas a través
 
 ### ¡Pruébalo!
 
-Visita [TMDB2EMOJIS](https://www.moviememoji.com) para empezar a explorar películas a través de emojis hoy mismo!
+Visita [TMDB2EMOJIS](https://www.tmdb2emojis.vercel.app) para empezar a explorar películas a través de emojis hoy mismo!
 
 Para más detalles sobre la implementación del backend, consulta nuestro [repositorio de TMDB2EMOJIS API](https://github.com/francisco-renteria/TMDB2EMOJIS-api).
