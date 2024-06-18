@@ -30,3 +30,17 @@ code {
 .openmoji-ios {
   font-family: NotoColorEmoji, sans-serif;
 }
+
+#emoji-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.emoji {
+  position: absolute;
+  font-size: 5rem;
+  transition: transform 2s ease-in-out;
+  font-family: OpenMojiDemoFont, sans-serif;
+}
