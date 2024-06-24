@@ -17,7 +17,7 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import axios from "axios";
 import convertCodeToEmoji from "../utils/convertEmojiCode";
-import SearchBar from "material-ui-search-bar";
+import SearchBar from "../Components/SearchBar";
 import MediaQuery from "react-responsive";
 
 const API_URL = process.env.REACT_APP_API_URL;
@@ -140,7 +140,7 @@ const Home = () => {
             <Typography variant="h4" align="center">
               🎬👾🍿
             </Typography>
-            <SearchBar
+            {/* <SearchBar
               value={movieName}
               onChange={setMovieName}
               onRequestSearch={handleSubmit}
@@ -152,11 +152,25 @@ const Home = () => {
                 background: "whitesmoke",
               }}
               placeholder="Buscar Película"
+            /> */}
+
+            <SearchBar
+              value={movieName}
+              onChange={setMovieName}
+              onRequestSearch={handleSubmit}
+              onCancelSearch={setMovieName}
+              style={{
+                width: "90%",
+                margin: 32,
+                alignContent: "center",
+                background: "whitesmoke",
+              }}
+              placeholder="Buscar Película"
             />
 
             {loading && <CircularProgress style={{ margin: 16 }} />}
             {error && (
-              <Box mt={2}>
+              <Box m={2}>
                 <Alert severity="error">{error}</Alert>
               </Box>
             )}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Container,
   Typography,
@@ -6,7 +6,9 @@ import {
   Paper,
   BottomNavigation,
   Link,
+  Button,
 } from "@mui/material";
+import { GitHub, Send } from "@mui/icons-material";
 
 const About = () => {
   return (
@@ -57,26 +59,45 @@ const About = () => {
                 una experiencia visual única al representar visualmente las
                 sinopsis de películas mediante emojis.
               </Typography>
-              <Typography variant="body1" mb={4}>
+              <Typography variant="body1">
                 Utilizando algoritmos avanzados de Procesamiento de lenguaje
                 natural (Natural Language Processing, NLP por sus siglas en
                 inglés), TMDB2EMOJIS analiza las sinopsis de películas y
                 selecciona emojis relevantes que capturan la esencia de cada
-                película.
+                película. Este proyecto fue desarrollado en el año 2024 por:
               </Typography>
-              <Typography variant="body1" mb={4}>
-                Este proyecto fue desarrollado por{" "}
-                <Link href="https://github.com/francisco-renteria">
+              <Typography
+                m={1}
+                alignItems={"center"}
+                justifyContent={"center"}
+                display={"flex"}
+              >
+                <Button
+                  color="alternative"
+                  variant="contained"
+                  startIcon={<GitHub />}
+                  href="https://github.com/francisco-renteria"
+                >
                   Francisco Rentería
-                </Link>{" "}
-                en el año 2024.
+                </Button>
               </Typography>
-
-              <Typography variant="body1" mb={4}>
+              <Typography>
                 Para más detalles, contáctame por correo electrónico:{" "}
-                <Link href="mailto:luisfrancisco.renteria@gmail.com">
+              </Typography>
+              <Typography
+                m={1}
+                alignItems={"center"}
+                justifyContent={"center"}
+                display={"flex"}
+              >
+                <Button
+                  color="alternative"
+                  variant="contained"
+                  endIcon={<Send />}
+                  href={"mailto:luisfrancisco.renteria@gmail.com"}
+                >
                   luisfrancisco.renteria@gmail.com
-                </Link>
+                </Button>
               </Typography>
             </Box>
           </Box>

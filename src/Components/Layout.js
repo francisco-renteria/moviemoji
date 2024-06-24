@@ -54,6 +54,12 @@ const theme = createTheme({
       primary: "#000000", // Color del texto principal
       secondary: "#ffffff", // Color del texto secundario
     },
+    alternative: {
+      main: "#941209",
+      light: "#757de8",
+      dark: "#840039",
+      contrastText: "#ffffff", // Color del texto en el fondo principal
+    },
   },
   typography: {
     fontFamily: "Arial, sans-serif",

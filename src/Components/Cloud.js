@@ -31,7 +31,7 @@ const Cloud = ({ EMOJI_COUNT }) => {
       emojiElement.innerText = convertCodeToEmoji(
         emojis[Math.floor(Math.random() * emojis.length)]._openMoji_hexcode
       );
-      setPosition1(emojiElement);
+      setPosition1(emojiElement,true);
       emojiContainerRef.current.appendChild(emojiElement);
       return emojiElement;
     }
@@ -42,14 +42,23 @@ const Cloud = ({ EMOJI_COUNT }) => {
       emojiElement.innerText = convertCodeToEmoji(
         emojis[Math.floor(Math.random() * emojis.length)]._openMoji_hexcode
       );
-      setPosition2(emojiElement);
+      setPosition2(emojiElement,true);
       emojiContainerRef.current.appendChild(emojiElement);
       return emojiElement;
     }
 
-    function setPosition1(element) {
-      const x = (Math.random() - 0.5) * 50;
-      const y = Math.random() * 100;
+    function setPosition1(element,init) {
+      var x=0;
+      var y=0;
+      if (init){
+        x = (0 - 0.5) * 50;
+        y = Math.random() * 100;
+      }
+      else{
+
+        x = (Math.random() - 0.5) * 50;
+        y = Math.random() * 100;
+      }
       element.style.transform = `translate(${x}vw, ${y}vh)`;
 
       if (element.getBoundingClientRect().right < 0) {
@@ -59,9 +68,18 @@ const Cloud = ({ EMOJI_COUNT }) => {
       }
     }
 
-    function setPosition2(element) {
-      const x = (Math.random() - 0.5) * 50 + 90;
-      const y = Math.random() * 100;
+    function setPosition2(element,init) {
+      var x = 0;
+      var y=0;
+
+      if (init){
+         x = (0.5) * 50 + 90;
+       y = Math.random() * 100;
+      }
+      else{
+       x = (Math.random() - 0.5) * 50 + 90;
+       y = Math.random() * 100;
+      }
       element.style.transform = `translate(${x}vw, ${y}vh)`;
 
       if (
@@ -77,12 +95,12 @@ const Cloud = ({ EMOJI_COUNT }) => {
     function updateEmojis() {
       emojiElements1.current.forEach((emojiElement) => {
         setTimeout(() => {
-          setPosition1(emojiElement);
+          setPosition1(emojiElement,false);
         }, Math.random() * 1000);
       });
       emojiElements2.current.forEach((emojiElement) => {
         setTimeout(() => {
-          setPosition2(emojiElement);
+          setPosition2(emojiElement,false);
         }, Math.random() * 1000);
       });
     }
