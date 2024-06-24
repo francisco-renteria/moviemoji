@@ -21,7 +21,7 @@ const Search = styled(Paper)(({ theme }) => ({
 }));
 
 const SearchIconWrapper = styled("div")(({ theme }) => ({
-  padding: theme.spacing(0, 2),
+  padding: "8px",
   height: "100%",
   display: "flex",
   alignItems: "center",
@@ -33,7 +33,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   flex: 1,
   "& .MuiInputBase-input": {
     padding: theme.spacing(1, 1, 1, 0),
-    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
+    paddingLeft: `calc(1rem)`,
     transition: theme.transitions.create("width"),
     width: "100%",
   },

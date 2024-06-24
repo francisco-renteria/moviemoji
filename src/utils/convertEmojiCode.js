@@ -3,19 +3,22 @@ function convertCodeToEmoji(code) {
   const codes = code.split("-");
 
   let result = "";
+  let list = [];
 
   codes.forEach((hexString) => {
     if (hexString.length >= 4) {
       // numero hexadecimal a entero
-      const integer = parseInt(hexString, 16);
+      const integer = parseInt("0x" + hexString, 16);
       // emoji correspondiente al código entero
-      const emoji = String.fromCodePoint(integer);
-      // concatena el emoji al resultado
-      result += emoji;
+      list.push(integer);
     } else {
       console.log(hexString);
     }
   });
+
+  const emoji = String.fromCodePoint(...list);
+  // concatena el emoji al resultado
+  result = emoji;
 
   return result;
 }

@@ -134,7 +134,7 @@ const Home = () => {
               gutterBottom
               style={{ fontWeight: 700 }}
             >
-              ¡Descubre los Emojis de una Película!
+              ¡Convierte una Película en Emojis!
             </Typography>
             <br></br>
             <Typography variant="h4" align="center">
