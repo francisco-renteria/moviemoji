@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Container,
-  Typography,
-  Box,
-  Paper,
-  BottomNavigation,
-  Link,
-  Button,
-} from "@mui/material";
+import { Container, Typography, Box, Paper, Button } from "@mui/material";
 import { GitHub, Send } from "@mui/icons-material";
 
 const About = () => {
@@ -103,29 +95,6 @@ const About = () => {
           </Box>
         </Paper>
       </Container>
-      <BottomNavigation
-        elevation={7}
-        style={{
-          padding: 0,
-          margin: "0px",
-          width: "100%",
-          boxSizing: "border-box",
-          position: "fixed",
-          left: 0,
-          bottom: 0,
-          right: 0,
-          display: "flex",
-          flexDirection: "column",
-        }}
-      >
-        <Typography align="center">
-          TMDB2EMOJIS utiliza{" "}
-          <Link href="https://www.themoviedb.org/documentation/api">
-            la API de TMDb
-          </Link>{" "}
-          💙
-        </Typography>
-      </BottomNavigation>
     </>
   );
 };

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { BottomNavigation, Typography, Button } from "@mui/material";
 
+import { Link } from "@mui/icons-material";
 import Cloud from "./Cloud";
 import ResponsiveAppBar from "./ResponsiveAppBar";
 
@@ -89,6 +91,35 @@ const Layout = ({ children }) => {
           {/* Rutas */}
           {children}
         </div>
+        <BottomNavigation
+          elevation={0}
+          style={{
+            padding: 0,
+            margin: 0,
+            width: "100%",
+            boxSizing: "border-box",
+            position: "fixed",
+            left: 0,
+            bottom: 0,
+            right: 0,
+            display: "flex",
+            flexDirection: "column",
+            height: "2rem",
+          }}
+        >
+          <Typography align="center">
+            TMDB2EMOJIS utiliza{" "}
+            <Button
+              color="alternative"
+              variant="contained"
+              endIcon={<Link />}
+              sx={{ padding: "0 16px" }}
+              href={"https://www.themoviedb.org/documentation/api"}
+            >
+              TMDB API
+            </Button>
+          </Typography>
+        </BottomNavigation>
       </ThemeProvider>
     </div>
   );
