@@ -1,6 +1,4 @@
-// components/SearchBar.js
-
-import React from "react";
+import React, { useRef } from "react";
 import { alpha, styled } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
@@ -47,14 +45,27 @@ const SearchBar = ({
   style,
   placeholder,
 }) => {
+  const inputRef = useRef(null);
+
   const handleKeyDown = (event) => {
     if (event.key === "Enter") {
-      onRequestSearch();
+      event.currentTarget.blur();
+      if (value) onRequestSearch();
     }
+  };
+
+  const handleClick = (event) => {
+    event.currentTarget.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
   };
 
   const handleClear = () => {
     onCancelSearch("");
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
   };
 
   return (
@@ -65,10 +76,17 @@ const SearchBar = ({
       <StyledInputBase
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        onKeyDown={handleKeyDown}
+        onKeyDown={(e) => {
+          handleKeyDown(e);
+        }}
+        onClick={(e) => {
+          handleClick(e);
+        }}
         placeholder={placeholder || "Search…"}
         inputProps={{ "aria-label": "search" }}
+        inputRef={inputRef} // Referencia al input
       />
+
       {value && (
         <IconButton onClick={handleClear}>
           <ClearIcon />
